@@ -199,9 +199,11 @@ class Ui {
         this.filtroInvertido = false;
         document.querySelector(".btn-dropdown").textContent = "Filtro ▾";
         //
-        document.querySelector(".conteudo").style.transform =
-          "translateX(-50%)";
-        window.scrollTo(0, 0);
+        if (window.innerWidth <= 768) {
+          document.querySelector(".conteudo").style.transform =
+            "translateX(-50%)";
+          window.scrollTo(0, 0);
+        }
         //
         this.uiRenderizarTarefas();
         this.uiSalvar();
