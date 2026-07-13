@@ -4,6 +4,7 @@
 ![Preview](./src/imagens/Preview2.png)
 ![Preview](./src/imagens/Preview3.png)
 ![Preview](./src/imagens/Preview4.png)
+![Preview](./src/imagens/Preview5.png)
 
 > Aplicação de lista de tarefas desenvolvida como projeto do [The Odin Project](https://www.theodinproject.com/lessons/node-path-javascript-todo-list) — módulo JavaScript Intermediário.
 
