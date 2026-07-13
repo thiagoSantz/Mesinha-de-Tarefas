@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Lista de tarefas</title>
+  </head>
+  <body>
+    <div class="conteudo">
+      <!-- ---------------------------------------------------- -->
+      <div class="sidebar">
+        <p class="titulo tl-sidebar1">Mesinha de Projetos</p>
+        <form class="formulario-projeto">
+          <input type="text" id="NomeProjeto" placeholder="Novo Projeto..." />
+          <button class="botao btn-form1" type="submit">+ Novo Projeto</button>
+        </form>
+        <div class="conteiner-projetos">
+          <p class="titulo tl-sidebar2">Meus Projetos</p>
+          <button class="botao btn-sidebar">Projeto Padrão</button>
+        </div>
+      </div>
+      <!-- ---------------------------------------------------- -->
+      <div class="main">
+        <!-- --------------------------------------- -->
+        <div class="conteiner-titulo">
+          <div class="caixa tituloEbotao">
+            <p class="titulo tl-main">Nome do Projeto</p>
+            <button class="botao btn-tarefa">+ Nova Tarefa</button>
+          </div>
+          <!-- ------------------------- -->
+          <div class="selecao filtro">
+            <button class="botao btn-dropdown">Filtro ▾</button>
+            <ul class="dropdown-menu">
+              <li>Nenhum</li>
+              <li>Status</li>
+              <li>Data</li>
+              <li>Prioridade</li>
+            </ul>
+          </div>
+        </div>
+        <!-- --------------------------------------- -->
+        <form class="formulario-modal">
+          <div class="formulario-interno">
+            <label for="nomeTarefa">Nome da tarefa</label>
+            <input
+              type="text"
+              id="nomeTarefa"
+              name="nome-tarefa"
+              placeholder="Nome aqui..."
+              required
+            />
+            <label for="descricaoTarefa">Descrição</label>
+            <textarea
+              id="descricaoTarefa"
+              name="descricao-tarefa"
+              placeholder="Digite aqui..."
+            ></textarea>
+            <!-- --------------------------------- -->
+            <div class="data-prioridade">
+              <div class="data-tarefa">
+                <label for="dataTarefa">Data</label>
+                <input
+                  type="date"
+                  id="dataTarefa"
+                  name="data-tarefa"
+                  required
+                />
+              </div>
+              <div class="prioridade-tarefa">
+                <label for="prioridadeTarefaLabel">Prioridade</label>
+                <select name="prioridadeTarefaLabel" id="prioridadeTarefa">
+                  <option value="Baixa">Baixa</option>
+                  <option value="Normal" selected="selected">Normal</option>
+                  <option value="Alta">Alta</option>
+                </select>
+              </div>
+            </div>
+            <!-- --------------------------------- -->
+            <button type="submit" class="botao btn-tarefa">
+              + Adicionar Tarefa
+            </button>
+          </div>
+        </form>
+        <!-- --------------------------------------- -->
+        <div class="conteiner-cards">
+          <div class="card-tarefa">
+            <!-- --------------------- -->
+            <div class="card-header">
+              <p class="titulo tl-card">Titulo da tarefa</p>
+              <div class="caixa apagarEstatus">
+                <button class="botao btn-editar">Editar</button>
+                <button class="botao btn-apagar">Apagar</button>
+                <div class="selecao card">
+                  <button class="botao btn-dropdown">Status ▾</button>
+                  <ul class="dropdown-menu">
+                    <li>Sem status</li>
+                    <li>Andamento</li>
+                    <li>Concluído</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- --------------------- -->
+            <p class="data-tarefa">00/00/0000</p>
+            <p class="detalhes">Descrição da tarefa..</p>
+            <!-- ------------------------------ -->
+          </div>
+          <!-- ----------------------------------- -->
+        </div>
+        <!-- ------------------------------------------ -->
+      </div>
+      <!-- ---------------------------------------------------- -->
+    </div>
+    <div class="modal-overlay">
+      <form class="modal">
+        <div class="formulario-interno">
+          <label for="nomeTarefa">Nome da tarefa</label>
+          <input
+            type="text"
+            id="nomeTarefaEdicao"
+            name="nome-tarefa"
+            placeholder="Nome aqui..."
+            required
+          />
+          <label for="descricaoTarefa">Descrição</label>
+          <textarea
+            id="descricaoTarefaEdicao"
+            name="descricao-tarefa"
+            placeholder="Digite aqui..."
+          ></textarea>
+          <!-- --------------------------------- -->
+          <div class="data-prioridade">
+            <div class="data-tarefa">
+              <label for="dataTarefa">Data</label>
+              <input
+                type="date"
+                id="dataTarefaEdicao"
+                name="data-tarefa"
+                required
+              />
+            </div>
+            <div class="prioridade-tarefa">
+              <label for="prioridadeTarefaLabel">Prioridade</label>
+              <select name="prioridadeTarefaLabel" id="prioridadeTarefaEdicao">
+                <option value="Baixa">Baixa</option>
+                <option value="Normal" selected="selected">Normal</option>
+                <option value="Alta">Alta</option>
+              </select>
+            </div>
+          </div>
+          <!-- --------------------------------- -->
+          <div class="botoes-modal">
+            <button type="submit" class="botao btn-edicao">
+              + Salvar Edição
+            </button>
+            <button type="button" class="botao btn-cancelar">X</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
