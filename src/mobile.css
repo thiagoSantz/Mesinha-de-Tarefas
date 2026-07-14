@@ -12,6 +12,10 @@
     transition: transform 0.3s ease;
   }
 
+  .conteiner-titulo {
+    gap: 10px;
+  }
+
   .sidebar {
     width: 100vw;
     min-height: 100vh;
@@ -40,11 +44,36 @@
     margin-bottom: -7px;
   }
 
+  .div-projeto {
+    gap: 25px;
+  }
+
+  .botao {
+    font-size: 1.025rem;
+  }
+
+  .btn-sidebar {
+    height: 75px;
+    font-size: 1.25rem;
+  }
+
+  #NomeProjeto {
+    padding: 1.25rem 1rem;
+    font-size: 1.05rem;
+  }
+
+  .editar-projeto,
+  .apagar-projeto {
+    height: 55px;
+    width: 55px;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+  }
+
   .btn-editar,
   .btn-apagar {
     min-width: unset;
     padding: 0.5rem;
-    font-size: 0.8rem;
   }
 
   .btn-tarefa {
