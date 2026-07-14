@@ -429,6 +429,7 @@ class Ui {
   }
   /**/
   uiSwipeMobile() {
+
     var conteudo = document.querySelector(".conteudo");
     var sidebar = document.querySelector(".sidebar");
     var main = document.querySelector(".main");
