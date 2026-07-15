@@ -13,7 +13,7 @@
   }
 
   .conteiner-titulo {
-    gap: 10px;
+    gap: 15px;
   }
 
   .sidebar {
@@ -39,7 +39,7 @@
     right: 3px;
     transform: none;
     top: auto;
-    bottom: -70%;
+    bottom: -185%;
     margin-top: 0;
     margin-bottom: -7px;
   }
@@ -55,6 +55,17 @@
   .btn-sidebar {
     height: 75px;
     font-size: 1.25rem;
+    gap: 15px;
+  }
+
+  .btn-sidebar input {
+    padding: 0.85rem;
+    font-size: 1.05rem;
+  }
+
+  .btn-confirmar-projeto {
+    cursor: pointer;
+    font-size: 2rem;
   }
 
   #NomeProjeto {
@@ -82,10 +93,20 @@
 
   .apagarEstatus {
     gap: 0.5rem;
+    flex-direction: column;
   }
 
   .formulario-modal.visivel {
     max-height: 800px;
+  }
+
+  .data-tarefa,
+  .detalhes {
+    font-size: 1.5rem;
+  }
+
+  .titulo {
+    font-size: 1.75rem;
   }
 
   .btn-dropdown {

@@ -176,6 +176,31 @@ class Ui {
           btnProjeto.appendChild(input);
           input.focus();
 
+          // clicar fora cancela
+          setTimeout(() => {
+            document.addEventListener(
+              "click",
+              (e) => {
+                if (!btnProjeto.contains(e.target)) {
+                  this.uiRenderizarProjetos();
+                }
+              },
+              { once: true },
+            );
+          }, 0);
+
+          // botao de enter
+          var btnConfirmar = document.createElement("span");
+          btnConfirmar.innerHTML = '<i class="fa-solid fa-paper-plane"></i>';
+          btnConfirmar.classList.add("btn-confirmar-projeto");
+          btnProjeto.appendChild(btnConfirmar);
+
+          btnConfirmar.addEventListener("click", () => {
+            projeto.projetoEditarTitulo(input.value);
+            this.uiRenderizarProjetos();
+            this.uiSalvar();
+          });
+
           // escuta o Enter para salvar
           input.addEventListener("keydown", (event) => {
             if (event.key === "Enter") {
@@ -429,7 +454,6 @@ class Ui {
   }
   /**/
   uiSwipeMobile() {
-
     var conteudo = document.querySelector(".conteudo");
     var sidebar = document.querySelector(".sidebar");
     var main = document.querySelector(".main");
