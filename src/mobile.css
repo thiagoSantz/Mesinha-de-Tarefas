@@ -30,6 +30,10 @@
     overflow-y: auto;
   }
 
+  .titulo, .tl-card {
+    font-size: 1.65rem;
+  }
+
   .card-header {
     gap: 1rem;
   }
@@ -102,11 +106,7 @@
 
   .data-tarefa,
   .detalhes {
-    font-size: 1.5rem;
-  }
-
-  .titulo {
-    font-size: 1.75rem;
+    font-size: 1.25rem;
   }
 
   .btn-dropdown {

@@ -289,14 +289,18 @@ body {
   font-size: x-large;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: left;
   /**/
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-width: 0;
   flex: 1;
 }
 
 .tituloEbotao {
+  min-width: 0;
+  overflow: hidden;
   margin-bottom: 1.5rem;
 }
 
@@ -422,9 +426,15 @@ textarea {
   margin-bottom: 1rem;
 }
 
-.alta { border-left: 4px solid red; }
-.normal { border-left: 4px solid #6d77d6; }
-.baixa { border-left: 4px solid green; }
+.alta {
+  border-left: 4px solid red;
+}
+.normal {
+  border-left: 4px solid #6d77d6;
+}
+.baixa {
+  border-left: 4px solid green;
+}
 
 .card-tarefa.removendo {
   opacity: 0;

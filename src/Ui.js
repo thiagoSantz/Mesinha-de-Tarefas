@@ -141,6 +141,13 @@ class Ui {
       this.uiRenderizarProjetos();
       this.uiSalvar();
       formulario.reset();
+      //
+    });
+
+    document.querySelector("#NomeProjeto").addEventListener("blur", () => {
+      setTimeout(() => {
+        document.querySelector("#NomeProjeto").value = "";
+      }, 200);
     });
   }
   /**/
