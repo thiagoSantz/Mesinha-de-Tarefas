@@ -30,8 +30,14 @@
     overflow-y: auto;
   }
 
-  .titulo, .tl-card {
-    font-size: 1.65rem;
+  .titulo,
+  .tl-card {
+    font-size: 1.50rem;
+  }
+
+  #NomeProjeto {
+    padding: 1.25rem 1rem;
+    font-size: 1.05rem;
   }
 
   .card-header {
@@ -70,11 +76,6 @@
   .btn-confirmar-projeto {
     cursor: pointer;
     font-size: 2rem;
-  }
-
-  #NomeProjeto {
-    padding: 1.25rem 1rem;
-    font-size: 1.05rem;
   }
 
   .editar-projeto,
